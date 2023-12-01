@@ -1,11 +1,31 @@
+<!-- views/welcome.ejs -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8"> 
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><%= title %></title>
+    <title>Welcome to AstroDispatch</title>
+   <link rel="stylesheet" href="/css/index.css">
 </head>
 <body>
-    <h1>Project Setting done.</h1>
+
+<div class="parallax">
+    <div class="content">
+        <h1>Welcome to AstroDispatch</h1>
+        <div class="cta-buttons">
+            <a class="cta-button" href="/user/registrationPage">Register</a>
+            <a class="cta-button" href="/user/signinPage">Sign In</a>
+        </div>
+    </div>
+</div>
+
+<div class="footer">
+    <div class="footer-content">
+        <p>© 2023 AstroDispatch. All rights reserved.</p>
+        <p>Contact us: info@astrodispatch.com</p>
+    </div>
+</div>
+
 </body>
 </html>

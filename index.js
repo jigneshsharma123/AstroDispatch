@@ -11,13 +11,12 @@ const port = process.env.PORT || 3000;
 app.set('view engine', 'ejs');
 app.set('views', __dirname + '/views');
 app.use(bodyParser.urlencoded({extended:true}));
+app.use(express.static('assets'));
+app.use('/user', require('./routers/user'));
 
 app.get('/',(req,res)=> {
     res.status(200).render('index',{title: "Welcome"});
-})
-
-
-
+});
 server.listen(port,(err)=> {
     if(err) {
         console.error("Problem in running the server");

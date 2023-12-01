@@ -1,0 +1,28 @@
+<!-- views/register.ejs -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AstroDispatch Registration</title>
+    <link rel="stylesheet" type="text/css" href="/css/registration.css" />
+</head>
+<body>
+    <div class="container">
+        <h2>Register with AstroDispatch</h2>
+        <form action="/register" method="POST">
+            <input type="text" name="username" placeholder="Username" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <input type="password" name="confirmPassword" placeholder="Confirm Password" required>
+            <button type="submit">Register</button>
+        </form>
+        <div class="social-buttons">
+            <button class="social-button">Register with Google</button>
+            <button class="social-button">Register with Facebook</button>
+        </div>
+        <p class="already-registered">Already registered? <a href="/signin">Sign in</a></p>
+    </div>
+</body>
+</html>
